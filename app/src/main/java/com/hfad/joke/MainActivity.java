@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this,DelayedMessageService.class);
         intent.putExtra(DelayedMessageService.EXTRA_MESSAGE,getResources().getString(R.string.button_response));
         startService(intent);
+        //finish();      // If you run this statement , you will get complete working of STARTED THREAD (Intent Service)
     }
 
     protected void onDestroy(){
